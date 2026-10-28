@@ -1,0 +1,10 @@
+{
+  "name": "researcher",
+  "description": "PLACEHOLDER — Investigates external docs, APIs, and best practices when a task has external dependencies.",
+  "tools": [],
+  "toolsSettings": {},
+  "permissions": {
+    "rules": []
+  },
+  "resources": []
+}

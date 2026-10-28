@@ -1,0 +1,10 @@
+{
+  "name": "developer",
+  "description": "PLACEHOLDER — Implements features one task at a time based on the approved spec.",
+  "tools": [],
+  "toolsSettings": {},
+  "permissions": {
+    "rules": []
+  },
+  "resources": []
+}

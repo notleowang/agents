@@ -1,0 +1,10 @@
+{
+  "name": "code-reviewer",
+  "description": "PLACEHOLDER — Reviews code against the spec and standards, then approves or blocks.",
+  "tools": [],
+  "toolsSettings": {},
+  "permissions": {
+    "rules": []
+  },
+  "resources": []
+}

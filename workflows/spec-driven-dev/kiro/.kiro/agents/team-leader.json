@@ -1,0 +1,10 @@
+{
+  "name": "team-leader",
+  "description": "PLACEHOLDER — Orchestrates the workflow: creates the spec, delegates tasks, and tracks progress.",
+  "tools": [],
+  "toolsSettings": {},
+  "permissions": {
+    "rules": []
+  },
+  "resources": []
+}

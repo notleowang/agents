@@ -1,0 +1,10 @@
+{
+  "name": "tester",
+  "description": "PLACEHOLDER — Runs tests and validates the developer's changes independently.",
+  "tools": [],
+  "toolsSettings": {},
+  "permissions": {
+    "rules": []
+  },
+  "resources": []
+}
