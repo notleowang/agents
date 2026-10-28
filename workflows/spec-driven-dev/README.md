@@ -1,16 +1,7 @@
-# Agent Framework
+# Spec-Driven Development
 
-This is a framework I like to follow when working with agents. It's inevitable to not be utilizing AI in the software development lifecycle now so the goal here is to do so in a way that still feels structured and organized.
-
-### Goal & Inspiration
-
-Like I said before, it's impossible to not be using AI to boost your productivity whether that's for work, design, or personal projects. The thing I don't like is that I could vibe-code entire products and apps now, but obviously that would be bad.
-
-Hence, I hope to adhere to a framework like this so that I can still learn and be the one piloting the entire development process.
-
-### Disclaimer
-
-This framework is by no means a standard. Everyone has different ways of utilizing agents in their work, and with AI constantly changing and coming out with new features, I understand that it can be difficult to mold a strict agentic workstyle.
+One concrete workflow built on my [Agent Framework](../README.md): a team-leader drives a
+spec, and specialized agents implement and validate the work one task at a time.
 
 ## Table Of Contents
 1. [Agents](#agents)
