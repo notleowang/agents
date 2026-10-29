@@ -59,17 +59,16 @@ folders later.
 
 ```
 spec-driven-dev/
-├── README.md             # this file
-└── kiro/                 # Kiro implementation (clone-and-drop)
-    └── .kiro/
-        ├── agents/       # Agent definitions
-        │   ├── team-leader.json
-        │   ├── researcher.json
-        │   ├── developer.json
-        │   ├── tester.json
-        │   └── code-reviewer.json
-        └── steering/     # Operating rules
-            └── operating-model.md
+├── README.md         # this file
+└── .kiro/
+    ├── agents/       # Agent definitions
+    │   ├── team-leader.json
+    │   ├── researcher.json
+    │   ├── developer.json
+    │   ├── tester.json
+    │   └── code-reviewer.json
+    └── steering/     # Operating rules
+        └── operating-model.md
 ```
 
 ## Usage
