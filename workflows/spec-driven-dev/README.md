@@ -85,5 +85,5 @@ sibling folders later.
 Copy the `.kiro/` directory from the Kiro implementation into your own project:
 
 ```bash
-cp -r kiro/.kiro /path/to/your/project/
+cp -r .kiro /path/to/your/project/
 ```
