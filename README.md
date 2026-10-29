@@ -1,49 +1,54 @@
 # agents
 
-A home for my AI agents, skills, steering files, and agentic workflows — organized so
-anyone can clone the repo and try them out.
+A home for my AI agents, skills, steering files, and agentic workflows.
 
-Different AI tools (Kiro, Claude, Cursor, …) define agents, skills, and steering in their
-own formats, so the repo is organized by tool first, with cross-tool **workflows** kept
-separately.
+## Harness Compatability
 
-**Clone and use.** Every tool folder contains a drop-in artifact named exactly what that
-tool looks for — e.g. `.kiro/` for Kiro. Copy that artifact into the root of your own
-project and the tool picks it up. Same rule inside each workflow.
+**Supported**
+- [Kiro CLI]()
 
-Only Kiro is set up today. Other tools (e.g. `claude/` with `CLAUDE.md`, `cursor/` with
-`.cursor/`) follow the same pattern and can be added later as sibling folders.
+**Planned**
+- [Claude Code]()
+- [Codex CLI]()
 
-## Layout
+## Navigating the Repository
+
+Below is a quick overview of how this repository is organized.
 
 ```
 agents/
-├── kiro/
-│   ├── README.md
-│   └── .kiro/       # ← drop into your project
-└── workflows/       # Self-contained agentic workflows (one folder each)
+├── .kiro/                   # Kiro dot folder
+│   ├── agents/
+│   ├── steering/
+│   └── skills/
+├── .claude/                 # Claude dot folder (planned)
+│   ├── agents/
+│   └── skills/
+└── workflows/               # Collection of multi-agent workflows
     └── spec-driven-dev/
-        ├── README.md     # What the workflow is and how to use it
-        └── kiro/.kiro/   # Kiro implementation (drop-in)
+    └── pr-reviewers/
 ```
 
-### Tool folders (`kiro/`, …)
+### Dot folders (`.kiro/`, `.claude/`)
 
-Reusable building blocks for a single tool, in that tool's native format. Each holds a
-drop-in artifact with the tool's magic name plus a README explaining it:
+Each dot folder targets one harness. You can copy the one that matches the one you are using into your project.
 
-- **agents** — individual agent definitions
-- **skills** — packaged skills
-- **steering / rules** — standalone operating rules / context files
+```bash
+cp -r .kiro <your-project>
+```
+
+Here are the respective documentation for where you can drop in these folders and their configuration scopes:
+- [Kiro](https://kiro.dev/docs/configuration/)
+- [Claude Code]() (todo)
+- [Codex]() (todo)
 
 ### Workflows (`workflows/`)
 
-Each subfolder is one complete agentic workflow. A workflow bundles several agents,
-steering, and docs that work together toward a process (not just a single agent). Every
-workflow has a `README.md` plus a per-tool implementation you can copy into your own
-project.
+Each subfolder is a complete agentic workflow. A workflow bundles several agents, steering, and docs that work together across a process. Every workflow has its own `README.md` and a drop-in folder for each supported harness.
 
-Start with [`spec-driven-dev`](workflows/spec-driven-dev/README.md).
+List of workflows:
+- [`spec-driven-dev`](workflows/spec-driven-dev/README.md): Agents that write code following a spec-driven development methodology
+- (planned) [`pr-reviewers`](): A panel of agents that can review pull requests
 
 ## License
 
