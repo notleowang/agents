@@ -48,6 +48,7 @@ Each subfolder is a complete agentic workflow. A workflow bundles several agents
 
 List of workflows:
 - [`spec-driven-dev`](workflows/spec-driven-dev/README.md): Agents that write code following a spec-driven development methodology
+- [`repo-briefing`](workflows/repo-briefing/README.md): A skill and read-only subagents that brief you on any repository (open source or private, GitHub or local) for an assigned task (Claude Code)
 - (planned) [`pr-reviewers`](): A panel of agents that can review pull requests
 
 ## License
