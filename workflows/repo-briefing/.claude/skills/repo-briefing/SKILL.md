@@ -24,7 +24,7 @@ If no repository is given, ask for one and stop. If no task is given, produce a 
 Do this before cloning or reading anything.
 
 - If the repository is public, or the user states it is their own, proceed. For GitHub you can confirm visibility with `gh repo view <owner/repo> --json visibility`.
-- If it is private, internal, or belongs to a client, ask the user to confirm that the client has explicitly agreed to AI-assisted processing of its source code, or that the repository is Improving-owned. If they cannot confirm, stop and point them to Global IT Services for an exception. Do not read, clone, or summarize the repository until they confirm.
+- If it is private, internal, or belongs to a client, ask the user to confirm that the client has explicitly agreed to AI-assisted processing of its source code, or that the repository belongs to the user's own organization with no client involved. If they cannot confirm, stop and point them to their organization's IT or security team for an exception. Do not read, clone, or summarize the repository until they confirm.
 - If the task description includes client names, confidential details, credentials, or personal data, ask the user to remove or anonymize them before continuing. Only a generic task description should be passed to subagents.
 - Never ask for, accept, or pass along tokens, passwords, or keys. Rely on the credentials the user's `git` and `gh` are already signed in with.
 
