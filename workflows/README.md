@@ -22,6 +22,7 @@ and drop into your project.
 Here is a list of workflows I have so far:
 
 - [`spec-driven-dev`](spec-driven-dev/README.md) — team-leader drives a spec, agents implement and validate one task at a time.
+- [`repo-briefing`](repo-briefing/README.md): a skill plus three read-only subagents that brief you on any repository, tailored to your assigned task. Claude Code only for now.
 - [`pr-review`]() — a panel of agents that give differing perspectives on a pull request review.
 
 ## Usage
